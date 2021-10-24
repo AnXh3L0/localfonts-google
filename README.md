@@ -13,7 +13,7 @@ Tested with Git Bash.
    ```bash
    ./windows.sh
    ```
-2. After that has finished, open `fonts/` with the File Explorer.
+2. After that has finished, open `google-fonts/` with the File Explorer.
    1. Select all files. (ctrl+a)
    2. Right-click and click Install. 
 
