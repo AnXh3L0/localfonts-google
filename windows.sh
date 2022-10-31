@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Downloads and installs all Google Fonts on your local machine
 # Git package needs to be installed
+# Git Bash or Cygwin/WSL need to be installed to execute the script
 # https://github.com/AnXh3L0
 
 FONTS_FOLDER=./google-fonts/
