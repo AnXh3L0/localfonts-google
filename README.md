@@ -9,13 +9,10 @@ Run either of the scripts using `sh script.sh` or `sh persistent.sh` and it will
 
 ## Usage on Windows
 
-Tested with Git Bash.
+Tested with Powershell 5 and Powershell 7.
 
-1. First, run the script:
-   ```bash
-   ./windows.sh
-   ```
-2. After that has finished, open `google-fonts/` with the File Explorer.
-   1. Select all files. (Ctrl+A)
-   2. Right-click and click Install. 
+Open a Powershell window as administrator, and run the script:
 
+`.\windows.ps1`
+
+This will run the same process as on Linux, and will set a Task scheduled every 7 days (by default). If you want to change the frequency, you can change the frequency, you can edit the `$CHECK_INTERVAL_DAYS` variable.
