@@ -8,19 +8,16 @@ FONTS_FOLDER=./google-fonts/
 
 mkdir -p $FONTS_FOLDER
 
-git clone https://github.com/google/fonts repository/
+git clone --depth=1 https://github.com/google/fonts repository/
 
 function move_fonts {
     while read font_path
     do
-
-    echo "Processing file: $font_path"
-
-    cp $font_path $FONTS_FOLDER
-
+    	echo "Processing file: $font_path"
+    	cp $font_path $FONTS_FOLDER
     done < "${1:-/dev/stdin}"
 }
 
-find ./repository -type f | grep ".ttf" | move_fonts
+find ./repository -type f -name "*.ttf" | move_fonts
 
 echo -e "\n\033[32mPlease select all font files, right click and install them!\033[0m\n"
